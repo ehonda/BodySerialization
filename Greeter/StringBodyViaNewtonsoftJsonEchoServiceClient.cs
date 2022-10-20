@@ -3,7 +3,7 @@ using RestSharp;
 
 namespace Greeter;
 
-public class StringBodyNewtonsoftJsonEchoServiceClient : IEchoServiceClient
+public class StringBodyViaNewtonsoftJsonEchoServiceClient : IEchoServiceClient
 {
     private readonly RestClient _client = new("http://localhost:5009");
 
