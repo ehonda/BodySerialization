@@ -17,7 +17,7 @@ Navigate to the echo service directory and start it
 EchoService $ dotnet run -c Release
 ```
 
-Then, you can run the greeter and inspect echo service log output as well as what is returned on the different echo service client calls
+Then you can run the greeter and inspect echo service log output as well as what is returned on the different echo service client calls
 
 ```console
 Greeter $ dotnet run -c Release
@@ -63,5 +63,7 @@ info: Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware[1]
       Accept-Encoding: gzip, deflate, br
       Content-Type: application/json; charset=utf-8
       Content-Length: 17
+info: Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware[3]
+      RequestBody: {"greeting":"Hi"}
 ...
 ```
