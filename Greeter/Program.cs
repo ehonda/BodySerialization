@@ -1,9 +1,11 @@
 ﻿using Greeter;
 
-var systemTextJsonClient = new SystemTextJsonEchoServiceClient();
-var systemTextJsonEcho = await systemTextJsonClient.EchoGreeting();
-Console.WriteLine($"System.Text.Json client: {systemTextJsonEcho}");
+await GreetWith(new SystemTextJsonEchoServiceClient(), "System.Text.Json");
+await GreetWith(new NewtonsoftJsonEchoServiceClient(), "Newtonsoft.Json");
+await GreetWith(new StringBodyNewtonsoftJsonEchoServiceClient(), "StringBody using Newtonsoft.Json");
 
-var newtonsoftJsonClient = new NewtonsoftJsonEchoServiceClient();
-var newtonsoftJsonEcho = await newtonsoftJsonClient.EchoGreeting();
-Console.WriteLine($"Newtonsoft.Json client: {newtonsoftJsonEcho}");
+async Task GreetWith(IEchoServiceClient client, string clientDescription)
+{
+    var echo = await client.EchoGreeting();
+    Console.WriteLine($"{clientDescription} client: {echo}");
+}
