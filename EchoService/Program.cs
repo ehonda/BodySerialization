@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.HttpLogging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHttpLogging(options => options.LoggingFields = HttpLoggingFields.All);
+
 var app = builder.Build();
 
 app.UseHttpLogging();
@@ -15,7 +19,7 @@ app.MapPost("/echo", async (HttpContext context) =>
 {
     using var reader = new StreamReader(context.Request.Body);
     var bodyContent = await reader.ReadToEndAsync();
-    return $"{bodyContent}{Environment.NewLine}";
+    return bodyContent;
 });
 
 // Configure the HTTP request pipeline.

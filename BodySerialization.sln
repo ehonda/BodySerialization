@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoService", "EchoService\EchoService.csproj", "{A5B09BB3-F0BA-4D00-B57F-1809252EB14C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greeter", "Greeter\Greeter.csproj", "{55B12F0B-12C0-4826-8D44-80CDF391610B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{A5B09BB3-F0BA-4D00-B57F-1809252EB14C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5B09BB3-F0BA-4D00-B57F-1809252EB14C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5B09BB3-F0BA-4D00-B57F-1809252EB14C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B12F0B-12C0-4826-8D44-80CDF391610B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B12F0B-12C0-4826-8D44-80CDF391610B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B12F0B-12C0-4826-8D44-80CDF391610B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B12F0B-12C0-4826-8D44-80CDF391610B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
