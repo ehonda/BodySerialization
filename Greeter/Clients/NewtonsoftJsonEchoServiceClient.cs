@@ -1,7 +1,7 @@
 ﻿using RestSharp;
 using RestSharp.Serializers.NewtonsoftJson;
 
-namespace Greeter;
+namespace Greeter.Clients;
 
 public class NewtonsoftJsonEchoServiceClient : IEchoServiceClient
 {

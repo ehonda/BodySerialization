@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
 
-namespace Greeter;
+namespace Greeter.Clients;
 
 public class StringBodyViaNewtonsoftJsonEchoServiceClient : IEchoServiceClient
 {

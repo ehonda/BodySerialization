@@ -1,4 +1,5 @@
 ﻿using Greeter;
+using Greeter.Clients;
 
 await GreetWith(new SystemTextJsonEchoServiceClient(), "System.Text.Json");
 await GreetWith(new NewtonsoftJsonEchoServiceClient(), "Newtonsoft.Json");

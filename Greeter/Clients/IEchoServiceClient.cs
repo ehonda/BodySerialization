@@ -1,4 +1,4 @@
-﻿namespace Greeter;
+﻿namespace Greeter.Clients;
 
 public interface IEchoServiceClient
 {
